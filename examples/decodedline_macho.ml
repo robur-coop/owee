@@ -8,7 +8,7 @@ let path =
   else
     Sys.argv.(1)
 
-let buffer = Owee_buf.map_binary path
+let buffer = Owee_unix.map_binary path
 
 let _header, commands = Owee_macho.read buffer
 

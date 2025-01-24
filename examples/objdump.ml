@@ -34,7 +34,7 @@ let print_summary file (header : Owee_macho.header) =
 
 let print_section_headers file =
   let open Printf in
-  let buffer = Owee_buf.map_binary file in
+  let buffer = Owee_unix.map_binary file in
   let header, commands = Owee_macho.read buffer in
 
   print_summary file header;

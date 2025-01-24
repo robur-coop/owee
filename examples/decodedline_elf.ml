@@ -19,7 +19,7 @@ let print_address =
     | "-no-address" -> false
     | _ -> usage ()
 
-let buffer = Owee_buf.map_binary path
+let buffer = Owee_unix.map_binary path
 
 let _header, sections = Owee_elf.read_elf buffer
 

@@ -3,5 +3,5 @@
  (public_name owee)
  (wrapped false)
  (foreign_stubs (language c) (names owee_stubs))
- (libraries unix bigarray)
+ (libraries bigarray)
  (synopsis "OCaml library to work with DWARF format"))

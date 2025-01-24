@@ -6,7 +6,7 @@ let () =
       exit 1)
     else Sys.argv.(1)
   in
-  let buffer = Owee_buf.map_binary path in
+  let buffer = Owee_unix.map_binary path in
   let _header, sections = Owee_elf.read_elf buffer in
   let option_value ~default = function
     | None -> default
